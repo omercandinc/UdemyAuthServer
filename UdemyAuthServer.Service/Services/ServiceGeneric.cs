@@ -60,6 +60,7 @@ namespace UdemyAuthServer.Service.Services
             return Response<NoDataDto>.Success(204);
         }
 
+
         public async Task<Response<NoDataDto>> Update(TDto entity, int id)
         {
             var isExistEntity = await _genericRepository.GetByIdAsync(id);
